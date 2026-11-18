@@ -1,0 +1,27 @@
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "banner  banner  banner"
+    "sidebar content right"
+    "footer  footer  footer";
+  min-height: 100vh;
+}
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "banner"
+      "sidebar"
+      "content"
+      "right"
+      "footer";
+  }
+}
+
+.content {
+  grid-area: content;
+  min-width: 0;
+  padding: 16px;
+}

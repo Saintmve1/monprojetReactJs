@@ -1,0 +1,10 @@
+.rightcolumn {
+  grid-area: right;
+  min-height: 100%;
+  padding: 20px;
+  background: #eef1f5;
+}
+
+.rightcolumn p {
+  margin-bottom: 8px;
+}

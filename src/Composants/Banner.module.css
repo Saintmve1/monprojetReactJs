@@ -1,0 +1,17 @@
+.banner {
+  grid-area: banner;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1f3a5f;
+  color: #fff;
+}
+
+/* ".banner h1" : ne vise que le h1 de la bannière */
+.banner h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -1.68px;
+  color: inherit; /* force le blanc de .banner, même si index.css donne une couleur au h1 */
+}

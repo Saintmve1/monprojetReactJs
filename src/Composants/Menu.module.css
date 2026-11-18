@@ -1,0 +1,41 @@
+.menu {
+  padding: 16px;
+}
+
+.menu  a {
+  color: #fff;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.menu  a:hover {
+  text-decoration: underline;
+}
+.lien {
+  text-decoration: none;
+  color: #1f3a5f;
+}
+
+.actif {
+  font-weight: bold;
+  border-bottom: 2px solid #1f3a5f;
+}
+.btnDeconnexion {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  margin-left: 1rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nomUtilisateur {
+  margin-left: auto;
+  font-weight: 600;
+}

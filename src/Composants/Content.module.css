@@ -1,0 +1,129 @@
+.content {
+  padding: 16px 24px;
+}
+
+.titre {
+  margin: 0 0 1rem 0;
+  color: #1f3a5f;
+}
+
+/* ===== GRILLE DES PRODUITS ===== */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.8rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.barreRecherche {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 480px;
+  margin: 16px 0 24px;
+}
+
+/* ===== INPUT RECHERCHE ===== */
+.recherche {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 12px 16px 12px 44px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  background-size: 20px;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  height: 46px; /* hauteur fixe pour s'aligner avec le bouton */
+}
+
+.recherche::placeholder {
+  color: #9ca3af;
+}
+
+.recherche:hover {
+  border-color: #d1d5db;
+  background-color: #fff;
+}
+
+.recherche:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+/* ===== FORMULAIRE D'AJOUT ===== */
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 12px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #1f3a5f;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1f3a5f;
+  box-shadow: 0 0 0 2px rgba(31, 58, 95, 0.2);
+}
+
+.erreur {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #c0392b;
+}
+
+.btn {
+  margin-top: 0.6rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+.vide {
+  margin-top: 2rem;
+  color: #6b7280;
+  text-align: center;
+}
